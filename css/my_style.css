@@ -99,6 +99,7 @@ p {
 
 
 
+
 /* @media only screen and (max-width: 992px) {
   .parallax-container .section {
     position: absolute;
@@ -143,6 +144,15 @@ footer .whoami a {
   text-decoration: underline;
 }
 
+footer .whoami .my-picture {
+  background: url("backgrounds/me.jpg");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  height: 120px;
+  width: 120px;
+  margin: 10px 0;
+}
+
 footer .contacts li {
   padding: 10px 0;
 }
@@ -181,6 +191,7 @@ footer .contacts li span {
 
 
 
+
 /* Common to pages */
 
 .samples h2 {
@@ -190,6 +201,7 @@ footer .contacts li span {
 .samples .divider {
   margin: 2em 0px;
 }
+
 
 
 
@@ -269,6 +281,7 @@ footer .contacts li span {
 
 
 
+
 /* Collections page */
 
 #collection-page a.collection-item:not(.active):hover {
@@ -310,6 +323,7 @@ footer .contacts li span {
 
 
 
+
 /* Forms page */
 
 #forms-page .input-field i.prefix {
@@ -326,6 +340,7 @@ footer .contacts li span {
   text-align: center;
   padding: 2rem 0;
 }
+
 
 
 
@@ -398,6 +413,7 @@ footer .contacts li span {
 
 
 
+
 /* MaterialBox page */
 
 #materialbox-page .card-image .image {
@@ -427,6 +443,7 @@ footer .contacts li span {
   background-size: 100%;
   background-position-y: 25%;
 }
+
 
 
 
