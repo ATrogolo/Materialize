@@ -22,7 +22,7 @@ body {
 }
 
 #nav-mobile .user-view .background {
-  background: url('backgrounds/bg_footer_crop.jpg');
+  background: url('backgrounds/bg_sunrise_crop.jpg');
   background-size: cover;
   background-position-y: 60%;
 }
@@ -365,7 +365,7 @@ footer .contacts li span {
 
 #carousel-page .carousel .img-3 {
   background-position: center;
-  background-image: url('../css/backgrounds/bg_footer_crop.jpg');
+  background-image: url('../css/backgrounds/bg_sunrise_crop.jpg');
 }
 
 #carousel-page .carousel .img-4 {
