@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Simple POC about Materialize CSS library" />
+  <meta name="robots" content="index,follow">
+  <title>Matterialize</title>
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicons/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon.png">
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="../css/my_style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <!-- Custom Font Awesome stylesheet -->
+  <link href="../css/my_fontawesome.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+  <!-- Montserrat font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Barra di navigazione (anche per Mobile) -->
+  <div class="navbar-fixed">
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="../index.html#" class="brand-logo">
+          <i class="material-icons hide-on-med-and-down">code</i>
+          AStepAhead</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="https://github.com/ATrogolo" target="_blank">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/andreatrogolo/" target="_blank">Linkedin profile</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="../index.html#"><i class="material-icons">home</i>Home</a></li>
+          <li><a href="https://github.com/ATrogolo" target="_blank">
+            <i class="material-icons">code</i>GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/andreatrogolo/" target="_blank">
+            <i class="material-icons">person</i>Linkedin profile</a></li>
+        </ul>
+        <a href="../index.html#" data-activates="nav-mobile" class="button-collapse">
+          <i class="material-icons">menu</i>
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Cards content here -->
+  <div id="cards-page" class="container samples">
+    <h2 class="center">Cards</h2>
+    <ul>
+      <li>
+        <h4>Basic card</h4>
+        <div class="center hoverable">
+          <div class="card-panel teal">
+            <span class="white-text">Cards are a convenient means of displaying content composed of different types of objects. They’re also well-suited for presenting similar objects whose size or supported actions can vary considerably, like photos with captions of variable length.
+            </span>
+          </div>
+        </div>
+        <div class="divider"></div>
+      </li>
+      <li>
+        <h4>Image Card</h4>
+        <div class="col s12 hoverable">
+          <div class="card">
+            <div class="card-image">
+              <div class="image"></div>
+              <span class="card-title">Italian Style</span>
+            </div>
+            <div class="card-content">
+              <p>Vespa is an Italian brand of scooter manufactured by Piaggio. The name means wasp in Italian. The Vespa has evolved from a single model motor scooter manufactured in 1946 by Piaggio & Co. S.p.A. of Pontedera, Italy to a full line of scooters and one of seven companies today owned by Piaggio. From their inception, Vespa scooters have been known for their painted, pressed steel unibody which combines a complete cowling for the engine (enclosing the engine mechanism and concealing dirt or grease), a flat floorboard (providing foot protection), and a prominent front fairing (providing wind protection) into a structural unit.</p>
+            </div>
+            <div class="card-action right-align">
+              <a class="amber-text" href="https://en.wikipedia.org/wiki/Vespa" target="_blank">More info here</a>
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+      </li>
+      <li>
+        <h4>Card Reveal</h4>
+        <div class="col s12 hoverable">
+          <div class="card sticky-action">
+            <div class="card-image waves-effect waves-block waves-light">
+              <div class="activator image"></div>
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Italian Style
+                <i class="material-icons right">more_vert</i>
+              </span>
+              <a class="activator" href="javascript:void(0);">Show more...</a>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Italian Style
+                <i class="material-icons right">close</i>
+              </span>
+              <p>
+                More than 16 million Vespa motor scooters have been made to date in thirteen countries and sold around the world. When he first saw the prototype, commissioned from Corradino D’Ascanio, a distinguished aero-engineer, industrialist Enrico Piaggio said, “It looks like a wasp!” Or vespa in Italian. Within months of Piaggio’s latest venture going into production in 1946, the Italian language possessed a new verb, vespare, to go somewhere on a Vespa.
+                <br> D’Ascanio’s Vespa was seductive. It was also cheap and reliable, while its step-through frame meant that women could ride it in skirts, and its concealed engine – tucked under the seat or over its small back wheel – kept oil, grease and dirt from chic Italian clothes.
+                <br> More than this, the Vespa – which happened to sound like a wasp, too – was fun. Especially so in a post-war Italy still recovering from the Allied bombings and that now turned to the production of modest machines for a domestic market longing for entertainment but with precious little to spend.
+              </p>
+            </div>
+            <div class="card-action right-align">
+              <a class="amber-text" href="https://en.wikipedia.org/wiki/Vespa" target="_blank">More info here</a>
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+      </li>
+      <li>
+        <h4>With tabs</h4>
+        <div id="tabs-card" class="card hoverable">
+          <div class="card-content">
+            <p>You can add tabs to your cards by adding a dividing cards-tabs div inbetween your header content and your tab content.</p>
+          </div>
+          <div class="card-tabs">
+            <ul class="tabs tabs-fixed-width">
+              <li class="tab">
+                <a href="#colosseum-image">Italy</a>
+              </li>
+              <li class="tab">
+                <a href="#vespa-image">Vespa</a>
+              </li>
+              <li class="tab">
+                <a href="#founder-image">Founder</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-content grey lighten-4">
+            <div id="colosseum-image">
+              <div class="card-image">
+                <div class="image"></div>
+              </div>
+              <div class="card-action right-align">
+                <a class="amber-text waves-effect waves-light btn pulse" href="https://en.wikipedia.org/wiki/Italy" target="_blank"><i class="material-icons right">send</i>More info</a>
+              </div>
+            </div>
+            <div id="vespa-image">
+              <div class="card-image">
+                <div class="image"></div>
+              </div>
+              <div class="card-action right-align">
+                <a class="amber-text waves-effect waves-light btn pulse" href="https://en.wikipedia.org/wiki/Vespa" target="_blank"><i class="material-icons right">send</i>More info</a>
+              </div>
+            </div>
+            <div id="founder-image">
+              <div class="card-image">
+                <div class="image"></div>
+              </div>
+              <div class="card-action right-align">
+                <a class="amber-text waves-effect waves-light btn pulse" href="https://en.wikipedia.org/wiki/Corradino_D%27Ascanio" target="_blank"><i class="material-icons right">send</i>More info</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="whoami col s12 m9">
+          <h5 class="white-text center">Who am I?</h5>
+          <div class="divider"></div>
+          <p class="grey-text text-lighten-4">I'm a
+            <span id="yearsold"></span> years old fullstack software engineer and I love work on the <b>front side</b> of the <i>web</i>, working on JS and graphics too.
+            <br> I'm located in <a href="https://www.google.it/maps/place/Torino+TO/@45.0702388,7.6000492,12z" target="_blank" class="amber-text">Turin</a>, text me if you want discover more about this wonderful city.
+            <br>Here a couple of <a href="https://valeriominatoph.jimdo.com/fotografie-disponibili-torino/" target="_blank" class="amber-text">Beautiful pictures</a>
+          </p>
+        </div>
+        <div class="contacts col s12 m3">
+          <h5 class="white-text center">Type me</h5>
+          <div class="divider"></div>
+          <ul>
+            <li>
+              <a class="white-text" href="mailto:trogolo.andrea@gmail.com">
+              <i class="fa fa-envelope small" aria-hidden="true"></i>
+              <span>Email</span>
+            </a>
+            </li>
+            <li>
+              <a class="white-text" href="https://plus.google.com/111814868093801733562" target="_blank">
+              <i class="fa fa-google-plus small" aria-hidden="true"></i>
+              <span>Google Plus</span>
+            </a>
+            </li>
+            <li>
+              <a class="white-text" href="https://twitter.com/atrogolo88" target="_blank">
+              <i class="fa fa-twitter small" aria-hidden="true"></i>
+              <span>Twitter</span>
+            </a>
+            </li>
+            <li>
+              <a class="white-text" href="https://www.linkedin.com/in/andreatrogolo/" target="_blank">
+              <i class="fa fa-linkedin small" aria-hidden="true"></i>
+              <span>LinkedIn</span>
+            </a>
+            </li>
+            <li>
+              <a class="white-text" href="https://github.com/ATrogolo" target="_blank">
+              <i class="fa fa-github small" aria-hidden="true"></i>
+              <span>GitHub</span>
+            </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container center-align">
+        Made, with <i class="fa fa-heart" aria-hidden="true"></i>, for education purposes by
+        <br><i>Andrea Trogolo</i> &copy;
+      </div>
+    </div>
+  </footer>
+
+  <!--  Scripts -->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../js/materialize.js"></script>
+  <script src="../js/init.js"></script>
+  <script src="../js/cards.js"></script>
+
+</body>
+
+</html>
