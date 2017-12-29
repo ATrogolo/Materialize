@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Simple POC about Materialize CSS library" />
+  <meta name="robots" content="index,follow">
+  <title>Matterialize</title>
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicons/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon.png">
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="../css/my_style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <!-- Custom Font Awesome stylesheet -->
+  <link href="../css/my_fontawesome.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+  <!-- Montserrat font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Barra di navigazione (anche per Mobile) -->
+  <div class="navbar-fixed">
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="../index.html#" class="brand-logo">
+          <i class="material-icons hide-on-med-and-down">code</i>
+          AStepAhead</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="https://github.com/ATrogolo" target="_blank">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/andreatrogolo/" target="_blank">Linkedin profile</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="../index.html#"><i class="material-icons">home</i>Home</a></li>
+          <li><a href="https://github.com/ATrogolo" target="_blank">
+            <i class="material-icons">code</i>GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/andreatrogolo/" target="_blank">
+            <i class="material-icons">person</i>Linkedin profile</a></li>
+        </ul>
+        <a href="../index.html#" data-activates="nav-mobile" class="button-collapse">
+          <i class="material-icons">menu</i>
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Forms content here -->
+  <div id="forms-page" class="container samples">
+    <h2 class="center">Forms</h2>
+
+    <section class="section">
+      <h4>Tell me something about you</h4>
+
+      <form id="user-data" class="col s12">
+        <div class="row">
+          <div class="input-field col s6 l4">
+            <input id="first_name" name="first_name" type="text" class="validate" data-length="20">
+            <label for="first_name">First Name</label>
+          </div>
+          <div class="input-field col s6 l4">
+            <input id="last_name" name="last_name" type="text" class="validate" data-length="20">
+            <label for="last_name">Last Name</label>
+          </div>
+          <div class="input-field col s12 l4">
+            <i class="material-icons prefix">mail</i>
+            <input id="email" id="email" type="email" class="validate" data-length="30">
+            <label for="email" data-success="OK" data-error="Wrong or too long email">Email</label>
+          </div>
+        </div>
+
+        <div class="row date-picker">
+          <h6>When you were born?</h6>
+          <input name="borndate" type="text" class="datepicker">
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <select name="country">
+              <option value="" disabled selected>Set your country</option>
+              <option value="Albania">Albania</option>
+              <option value="Andorra">Andorra</option>
+              <option value="Armenia">Armenia</option>
+              <option value="Austria">Austria</option>
+              <option value="Azerbaijan">Azerbaijan</option>
+              <option value="Belarus">Belarus</option>
+              <option value="Belgium">Belgium</option>
+              <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+              <option value="Bulgaria">Bulgaria</option>
+              <option value="Croatia">Croatia</option>
+              <option value="Cyprus">Cyprus</option>
+              <option value="Czech Republic">Czech Republic</option>
+              <option value="Denmark">Denmark</option>
+              <option value="Estonia">Estonia</option>
+              <option value="Finland">Finland</option>
+              <option value="France">France</option>
+              <option value="Georgia">Georgia</option>
+              <option value="Germany">Germany</option>
+              <option value="Greece">Greece</option>
+              <option value="Hungary">Hungary</option>
+              <option value="Iceland">Iceland</option>
+              <option value="Ireland">Ireland</option>
+              <option value="Italy">Italy</option>
+              <option value="Kazakhstan">Kazakhstan</option>
+              <option value="Kosovo">Kosovo</option>
+              <option value="Latvia">Latvia</option>
+              <option value="Liechtenstein">Liechtenstein</option>
+              <option value="Lithuania">Lithuania</option>
+              <option value="Luxembourg">Luxembourg</option>
+              <option value="Macedonia (FYROM)">Macedonia (FYROM)</option>
+              <option value="Malta">Malta</option>
+              <option value="Moldova">Moldova</option>
+              <option value="Monaco">Monaco</option>
+              <option value="Montenegro">Montenegro</option>
+              <option value="Netherlands">Netherlands</option>
+              <option value="Norway">Norway</option>
+              <option value="Poland">Poland</option>
+              <option value="Portugal">Portugal</option>
+              <option value="Romania">Romania</option>
+              <option value="Russia">Russia</option>
+              <option value="San Marino">San Marino</option>
+              <option value="Serbia">Serbia</option>
+              <option value="Slovakia">Slovakia</option>
+              <option value="Slovenia">Slovenia</option>
+              <option value="Spain">Spain</option>
+              <option value="Sweden">Sweden</option>
+              <option value="Switzerland">Switzerland</option>
+              <option value="Turkey">Turkey</option>
+              <option value="Ukraine">Ukraine</option>
+              <option value="United Kingdom (UK)">United Kingdom (UK)</option>
+            </select>
+            <label>Where do you come from?</label>
+          </div>
+        </div>
+
+        <div class="row sex-row">
+          <h6>Sex:</h6>
+          <p>
+            <input class="with-gap" name="sex" type="radio" id="male" value="male" checked/>
+            <label for="male">Male</label>
+          </p>
+          <p>
+            <input class="with-gap" name="sex" type="radio" id="female" value="female" />
+            <label for="female">Female</label>
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="about" name="about" class="materialize-textarea"></textarea>
+            <label for="about">About you:</label>
+          </div>
+        </div>
+
+        <div class="row privacy-row">
+          <h6>Do you accept:</h6>
+          <ul>
+            <li>
+              <p>
+                <input id="privacy" name="privacy" value="ok" type="checkbox" />
+                <label for="privacy">Privacy agreement</label>
+              </p>
+            </li>
+            <li>
+              <p>
+                <input id="data-treatement" name="data-treatement" value="ok" type="checkbox" class="filled-in" />
+                <label for="data-treatement">Data Treatement</label>
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="progress hide">
+          <div class="indeterminate"></div>
+        </div>
+
+        <div class="progress-spinner hide">
+          <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-teal-only">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div>
+              <div class="gap-patch">
+                <div class="circle"></div>
+              </div>
+              <div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row center">
+          <button id="submit-btn" class="btn waves-effect waves-light" type="submit" name="action">Send
+            <i class="material-icons right">send</i>
+          </button>
+        </div>
+      </form>
+    </section>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="whoami col s12 m9">
+          <h5 class="white-text center">Who am I?</h5>
+          <div class="divider"></div>
+          <p class="grey-text text-lighten-4">I'm a
+            <span id="yearsold"></span> years old fullstack software engineer and I love work on the <b>front side</b> of the <i>web</i>, working on JS and graphics too.
+            <br> I'm located in <a href="https://www.google.it/maps/place/Torino+TO/@45.0702388,7.6000492,12z" target="_blank" class="amber-text">Turin</a>, text me if you want discover more about this wonderful city.
+            <br>Here a couple of <a href="https://valeriominatoph.jimdo.com/fotografie-disponibili-torino/" target="_blank" class="amber-text">Beautiful pictures</a>
+          </p>
+        </div>
+        <div class="contacts col s12 m3">
+          <h5 class="white-text center">Type me</h5>
+          <div class="divider"></div>
+          <ul>
+            <li>
+              <a class="white-text" href="mailto:trogolo.andrea@gmail.com">
+              <i class="fa fa-envelope small" aria-hidden="true"></i>
+              <span>Email</span>
+            </a>
+            </li>
+            <li>
+              <a class="white-text" href="https://plus.google.com/111814868093801733562" target="_blank">
+              <i class="fa fa-google-plus small" aria-hidden="true"></i>
+              <span>Google Plus</span>
+            </a>
+            </li>
+            <li>
+              <a class="white-text" href="https://twitter.com/atrogolo88" target="_blank">
+              <i class="fa fa-twitter small" aria-hidden="true"></i>
+              <span>Twitter</span>
+            </a>
+            </li>
+            <li>
+              <a class="white-text" href="https://www.linkedin.com/in/andreatrogolo/" target="_blank">
+              <i class="fa fa-linkedin small" aria-hidden="true"></i>
+              <span>LinkedIn</span>
+            </a>
+            </li>
+            <li>
+              <a class="white-text" href="https://github.com/ATrogolo" target="_blank">
+              <i class="fa fa-github small" aria-hidden="true"></i>
+              <span>GitHub</span>
+            </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container center-align">
+        Made, with <i class="fa fa-heart" aria-hidden="true"></i>, for education purposes by
+        <br><i>Andrea Trogolo</i> &copy;
+      </div>
+    </div>
+  </footer>
+
+  <!--  Scripts -->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../js/materialize.js"></script>
+  <script src="../js/init.js"></script>
+
+</body>
+
+</html>
