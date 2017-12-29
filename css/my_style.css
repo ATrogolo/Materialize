@@ -17,6 +17,16 @@ body {
   margin-right: 5px;
 }
 
+#nav-mobile .user-view {
+  height: 10rem;
+}
+
+#nav-mobile .user-view .background {
+  background: url('backgrounds/bg_footer_crop.jpg');
+  background-size: cover;
+  background-position-y: 60%;
+}
+
 nav ul a,
 nav .brand-logo {
   color: #1e88e5;
@@ -54,7 +64,8 @@ p {
 
 
 #samples-section .javascript-block>.collection * {
-  color: #ffc107 !important; /* Amber */
+  color: #ffc107 !important;
+  /* Amber */
 }
 
 #samples-section .javascript-block .fa-fire {
@@ -72,6 +83,8 @@ p {
 .parallax-container .section {
   width: 100%;
 }
+
+
 
 
 
@@ -166,6 +179,8 @@ footer .contacts li span {
 
 
 
+
+
 /* Common to pages */
 
 .samples h2 {
@@ -175,6 +190,8 @@ footer .contacts li span {
 .samples .divider {
   margin: 2em 0px;
 }
+
+
 
 
 
@@ -250,6 +267,8 @@ footer .contacts li span {
 
 
 
+
+
 /* Collections page */
 
 #collection-page a.collection-item:not(.active):hover {
@@ -289,6 +308,8 @@ footer .contacts li span {
 
 
 
+
+
 /* Forms page */
 
 #forms-page .input-field i.prefix {
@@ -305,6 +326,8 @@ footer .contacts li span {
   text-align: center;
   padding: 2rem 0;
 }
+
+
 
 
 
@@ -373,6 +396,8 @@ footer .contacts li span {
 
 
 
+
+
 /* MaterialBox page */
 
 #materialbox-page .card-image .image {
@@ -402,6 +427,8 @@ footer .contacts li span {
   background-size: 100%;
   background-position-y: 25%;
 }
+
+
 
 
 
