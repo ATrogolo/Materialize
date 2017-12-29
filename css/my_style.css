@@ -32,7 +32,34 @@ p {
 }
 
 #details-anchor {
-  margin-bottom: 64px;
+  margin-bottom: 80px;
+}
+
+.parallax-container .header.title {
+  color: #176bb9;
+  font-weight: bold;
+}
+
+#samples-section h5 span {
+  font-weight: bold;
+}
+
+#samples-section .collection {
+  margin-top: 2rem;
+}
+
+#samples-section .collection i {
+  vertical-align: middle;
+}
+
+
+#samples-section .javascript-block>.collection * {
+  color: #ffc107 !important; /* Amber */
+}
+
+#samples-section .javascript-block .fa-fire {
+  font-size: 24px;
+  margin-right: 3px;
 }
 
 .parallax-container {
@@ -46,7 +73,20 @@ p {
   width: 100%;
 }
 
-@media only screen and (max-width: 992px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media only screen and (max-width: 992px) {
   .parallax-container .section {
     position: absolute;
     top: 40%;
@@ -54,7 +94,7 @@ p {
   #index-banner .section {
     top: 10%;
   }
-}
+} */
 
 @media only screen and (max-width: 600px) {
   #index-banner .section {
@@ -83,4 +123,313 @@ footer.page-footer {
 
 #sidenav-overlay {
   z-index: 1;
+}
+
+footer .whoami a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+footer .contacts li {
+  padding: 10px 0;
+}
+
+footer .contacts ul {
+  padding-left: 2em;
+}
+
+footer .contacts li a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+footer .contacts li .material-icons {
+  vertical-align: middle;
+}
+
+footer .contacts li span {
+  padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Common to pages */
+
+.samples h2 {
+  color: #1e88e5;
+}
+
+.samples .divider {
+  margin: 2em 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Cards page */
+
+#cards-page ul>li {
+  opacity: 0;
+}
+
+#cards-page .card-image .image {
+  height: 15em;
+  background-image: url('../css/backgrounds/background1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#cards-page #tabs-card .image {
+  height: 20em;
+  background-size: contain;
+  background-position-x: 50%;
+}
+
+#cards-page #tabs-card #colosseum-image .image {
+  background-image: url('../css/backgrounds/cards_colosseum.jpg');
+}
+
+#cards-page #tabs-card #vespa-image .image {
+  background-image: url('../css/backgrounds/cards_vespa.jpg');
+}
+
+#cards-page #tabs-card #founder-image .image {
+  background-image: url('../css/backgrounds/cards_ascanio.jpg');
+}
+
+#cards-page #tabs-card li a {
+  color: #ffc107 !important;
+}
+
+#cards-page #tabs-card .indicator {
+  background-color: #ffc107 !important;
+}
+
+#cards-page #tabs-card .card-action {
+  padding: 10px;
+}
+
+#cards-page #tabs-card .card-action a {
+  color: white !important;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Collections page */
+
+#collection-page a.collection-item:not(.active):hover {
+  color: white;
+  background-color: #4db6ac;
+}
+
+#collection-page .collection-item span.title {
+  font-weight: bold;
+}
+
+#collection-page .colosseum .circle {
+  background-image: url('../css/backgrounds/cards_colosseum.jpg');
+  background-size: contain;
+}
+
+#collection-page .vespa .circle {
+  background-image: url('../css/backgrounds/cards_vespa.jpg');
+  background-size: cover;
+}
+
+#collection-page .italy .circle {
+  background-image: url('../css/backgrounds/italy_flag.jpg');
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Forms page */
+
+#forms-page .input-field i.prefix {
+  margin-top: .4em;
+}
+
+#forms-page .date-picker,
+#forms-page .sex-row,
+#forms-page .privacy-row {
+  margin: 0;
+}
+
+#forms-page .progress-spinner {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Carousel page */
+
+#carousel-page .carousel a>div {
+  height: 100%;
+  background-size: cover;
+}
+
+#carousel-page .carousel-slider {
+  margin-bottom: 6rem;
+}
+
+#carousel-page .carousel-slider div {
+  background-position: center;
+}
+
+#carousel-page .carousel .img-1 {
+  background-image: url('../css/backgrounds/background1.jpg');
+}
+
+#carousel-page .carousel .img-2 {
+  background-image: url('../css/backgrounds/background3.jpg');
+}
+
+#carousel-page .carousel .img-3 {
+  background-position: center;
+  background-image: url('../css/backgrounds/bg_footer_crop.jpg');
+}
+
+#carousel-page .carousel .img-4 {
+  background-image: url('../css/backgrounds/cards_colosseum.jpg');
+}
+
+#carousel-page .carousel .img-5 {
+  background-image: url('../css/backgrounds/cards_vespa.jpg');
+}
+
+#carousel-page .carousel .img-6 {
+  background-image: url('../css/backgrounds/italy_flag.jpg');
+  background-position: 100% 38%;
+}
+
+#carousel-page .carousel .indicators>li {
+  background-color: darkgrey;
+}
+
+#carousel-page .carousel .indicators>li.active {
+  background-color: black;
+}
+
+
+
+
+
+
+
+
+/* MaterialBox page */
+
+#materialbox-page .card-image .image {
+  opacity: 0;
+}
+
+#materialbox-page .card-image .image.colosseum {
+  height: 20em;
+  background-image: url('../css/backgrounds/cards_colosseum.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: 50%;
+}
+
+#materialbox-page .card-image .image.vespa {
+  height: 20em;
+  background-image: url('../css/backgrounds/cards_vespa.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: 50%;
+}
+
+#materialbox-page .card-image .image.italy-flag {
+  height: 20em;
+  background-image: url('../css/backgrounds/italy_flag.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: 25%;
+}
+
+
+
+
+
+
+/* ScrollFire page */
+
+#scrollfire-page li .empty {
+  height: 500px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#scrollfire-page .section>ul>li {
+  margin-bottom: 20px;
+}
+
+#scrollfire-page ul.italians>li {
+  opacity: 0;
+  font-size: 1.5rem;
+}
+
+#scrollfire-page .image.colosseum {
+  opacity: 0;
+  height: 20em;
+  background-image: url('../css/backgrounds/cards_colosseum.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: 50%;
 }
