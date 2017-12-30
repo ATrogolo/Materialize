@@ -21,7 +21,7 @@
 
       setTimeout(function () {
         var mailAddress = "trogolo.andrea@gmail.com";
-        var mailSubject = "[INFO] - Submitted data from Matterialize";
+        var mailSubject = "[INFO] - Submitted data from Materialize";
         var mailBody = "";
         var tokens = [];
         var formInput = $('#forms-page #user-data').serialize();
