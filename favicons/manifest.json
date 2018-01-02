@@ -14,7 +14,7 @@
     ],
     "theme_color": "#25a69a",
     "background_color": "#25a69a",
-    "start_url": "/",
+    "start_url": "/Materialize/",
     "display": "standalone",
     "orientation": "portrait"
 }
