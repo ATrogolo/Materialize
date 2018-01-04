@@ -8,6 +8,10 @@
         years -= 1;
       }
       $('footer #yearsold').text(years);
+
+      gtag('event', 'howOldAmI', {
+        'age': years
+      });
     };
 
     function handleFormSubmit(event) {
