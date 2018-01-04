@@ -18,6 +18,7 @@
 }
 
 
+
 /* makes the font 33% larger relative to the icon container */
 
 .fa-lg {
@@ -90,6 +91,7 @@
 .fa.fa-pull-right {
   margin-left: .3em;
 }
+
 
 
 /* Deprecated as of 4.4.0 */
@@ -236,6 +238,7 @@
 }
 
 
+
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
      readers do not read off random characters that represent icons */
 
@@ -272,4 +275,8 @@
 
 .fa-heart:before {
   content: "\f004";
+}
+
+.fa-telegram:before {
+  content: "\f2c6";
 }
