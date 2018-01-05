@@ -9,9 +9,7 @@
       }
       $('footer #yearsold').text(years);
 
-      gtag('event', 'howOldAmI', {
-        'age': years
-      });
+      ga('send', 'event', 'selection', 'howOldAmI', `${years}`);
     };
 
     function handleFormSubmit(event) {
@@ -22,6 +20,9 @@
 
       // Show progress bar
       $progress.toggleClass('hide');
+
+      var formSerialized = $('#forms-page #user-data').serialize().split('&').join(' ');
+      ga('send', 'event', 'selection', 'FormSubmit', formSerialized);
 
       setTimeout(function () {
         var mailAddress = "trogolo.andrea@gmail.com";
@@ -86,6 +87,15 @@
 
     // Send filled form inputs by mail
     $('#forms-page #submit-btn').on('click', handleFormSubmit);
+
+    // Track clicks
+    $('#get-started-button').on('click', function (event) {
+      ga('send', 'event', 'selection', 'get-started-button', 'true');
+    });
+    $('.contacts a').on('click', function (event) {
+      var contactLabel = $(event.currentTarget).find('span').text();
+      ga('send', 'event', 'selection', 'contacts', contactLabel);
+    });
 
     howOldAmI();
   });
