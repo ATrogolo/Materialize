@@ -1,4 +1,4 @@
-const VERSION = '001';
+const VERSION = '002';
 const filesToCache = [
   // HTML
   'https://atrogolo.github.io/Materialize/',
