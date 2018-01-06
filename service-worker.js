@@ -2,6 +2,7 @@ const VERSION = '001';
 const filesToCache = [
   // HTML
   'https://atrogolo.github.io/Materialize/',
+  'https://atrogolo.github.io/Materialize/index.html',
   'samples/cards.html',
   'samples/carousel.html',
   'samples/collections.html',
@@ -11,11 +12,8 @@ const filesToCache = [
   // Font and CSS
   '/Materialize/favicons/favicon-16x16.png?v=2',
   '/Materialize/favicons/favicon-32x32.png?v=2',
-  'https://fonts.googleapis.com/icon?family=Material+Icons',
-  'https://fonts.googleapis.com/css?family=Roboto:400,700',
-  'https://fonts.googleapis.com/css?family=Montserrat',
-  'https://fonts.gstatic.com/s/montserrat/v12/zhcz-_WihjSQC0oHJ9TCYAzyDMXhdD8sAj6OAJTFsBI.woff2',
-  'https://fonts.gstatic.com/s/materialicons/v33/2fcrYFNaTjcS6g4U3t-Y5UEw0lE80llgEseQY3FEmqw.woff2',
+  'fonts/material-icons-v33.woff2',
+  'fonts/monserrat-v12.woff2',
   'https://atrogolo.github.io/Materialize/css/fonts/fontawesome-webfont.woff2',
   'css/materialize.min.css',
   'css/my_style.css',
