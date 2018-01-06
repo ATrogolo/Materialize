@@ -47,7 +47,7 @@ const files = [
 self.addEventListener('install', function (event) {
   console.log("Installing SW - Version: " + VERSION);
 
-  e.waitUntil(
+  event.waitUntil(
     caches.open(VERSION).then(function (cache) {
       console.log('[ServiceWorker] Caching app shell');
       return cache.addAll(filesToCache);
