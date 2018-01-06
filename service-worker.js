@@ -1,4 +1,4 @@
-const VERSION = '002';
+const VERSION = '003';
 const filesToCache = [
   // HTML
   'https://atrogolo.github.io/Materialize/',
@@ -12,8 +12,8 @@ const filesToCache = [
   // Font and CSS
   '/Materialize/favicons/favicon-16x16.png?v=2',
   '/Materialize/favicons/favicon-32x32.png?v=2',
-  'fonts/material-icons-v33.woff2',
-  'fonts/monserrat-v12.woff2',
+  'css/fonts/material-icons-v33.woff2',
+  'css/fonts/monserrat-v12.woff2',
   'https://atrogolo.github.io/Materialize/css/fonts/fontawesome-webfont.woff2',
   'css/materialize.min.css',
   'css/my_style.css',
