@@ -39,8 +39,7 @@ const filesToCache = [
   '/js/cards.js',
   '/js/materialbox.js',
   '/js/scrollfire.js',
-  'https://code.jquery.com/jquery-2.1.1.min.js',
-  'https://www.google-analytics.com/analytics.js'
+  'https://code.jquery.com/jquery-2.1.1.min.js' //, 'https://www.google-analytics.com/analytics.js'
 ];
 
 // Install event listener - First event on service worker detection
