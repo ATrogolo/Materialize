@@ -1,5 +1,5 @@
 const VERSION = '001';
-const files = [
+const filesToCache = [
   // HTML
   'https://atrogolo.github.io/Materialize/',
   '/samples/cards.html',
@@ -85,7 +85,7 @@ self.addEventListener('fetch', function (event) {
         })
         .then(function (response) {
           console.log("Response from cache: " + response);
-          return response || fetch(e.request);
+          return response || fetch(event.request);
         });
     })
   );
